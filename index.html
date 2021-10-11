@@ -1,27 +1,22 @@
-<!DOCTYPE html>
+>
 <html>
 <head>
-    <title> Reto#2 </title>
-    <script  src = " https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js " ></script>      
-    <script  type = " text/javascript " src="js/funciones.js "> </script>      
-
-
+    <title>Reto#2 </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/funciones.js"></script>
 </head>
 <body>
-<h1>Reserva de huespedes al hotel MtSa!! </h1>
+<h1>RESERVAS HOTEL ARBOLEDA!!!</h1>
+<button onclick="consultaInfoCliente()"> Consultar Cliente </button>
 <div id="resultado"></div>
-<button onclick="traerInformacion()"> Consultar Huesped</button>
-
-
-<div >
-    <input  type="number" id="id" placeholder ="id">
-    <input  type ="text" id="name" placeholder= "name">
-    <input  type ="text" id ="email" placeholder ="email">
-    <input  type = "number"id ="age" placeholder ="age">
-</div >
-<button  onclick="guardarInformacion()">Guardar Huesped</button>
-<button  onclick="editarInformacion()">Actualizar Huesped</button>
-
+<div>
+    <input type="number" id="id" placeholder="id">
+    <input type="text" id="Nombre" placeholder="Nombre">
+    <input type="text" id="Email" placeholder="Email">
+    <input type="number" id="age" placeholder="age">
+</div>
+<button onclick="registrarCliente()"> Registrar Cliente </button>
+<button onclick="actualizarInformacion()"> Actualizar Cliente </button>
 <div>
     <h2>Mensajes</h2>
     <button onclick="consultaMensaje()"> Consultar Mensaje </button>
@@ -32,30 +27,24 @@
     <input type="text" id="descMensaje" placeholder="Mensaje">
     <button onclick="registrarMensaje()">Registrar Mensaje</button>
 </div>
-
+<div><button onclick="editarInformacionMensaje()">Actualizar Mensaje</button></div>
 <div>
-    <h3> Habitaciones del hotel MtSa </h3>
-    <div id="resultadohabitaciones"></div>
-    <button onclick="consultaHabitaciones()"> Consultar Habitacion</button>
-
+    <h2> Habitaciones!! </h2>
+    <div id="resultadoRoom"></div>
+    <button onclick="traerInformacionRoom()"> Consultar </button>
+    
+    <div>
+        <input type="number" id="id2" placeholder="id">
+        <input type="text" id="room" placeholder="room">
+        <input type="number" id="stars" placeholder="stars">
+        <input type="number" id="category_id" placeholder="category_id">
+        <input type="text" id="description" placeholder="description">
     </div>
+    
+    <button onclick="guardarInformacionRoom()">Guardar!</button>
+    <button onclick="editarInformacionRoom()">Actualizar!</button>
 
-<div>
-    <input type="number" id="id" placeholder="id">
-    <input type="number" id="room" placeholder="room">
-    <input type="number" id="stars" placeholder="stars">
-    <input type="number" id="category" placeholder="category">
-    <input type="text" id="description" placeholder="description">
 </div>
 
-    <th><button onclick="guardarHabitacion()">Guardar!</button></th>
-    <th><button onclick="editarHabitacion()">Editar!</button></th>
-    
 </body>
-
-
 </html>
-
-
-
-
