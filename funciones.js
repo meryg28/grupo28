@@ -207,13 +207,13 @@ function traerInformacionRoom(){
         datatype:"JSON",
         success:function(respuesta){
             console.log(respuesta);
-            pintarRespuestaRoom(respuesta.items)
+            RespuestaRoom(respuesta.items)
         }
 
     });
 }
 // habaitaciones
-function pintarRespuestaRoom(items){
+function RespuestaRoom(items){
 
     let myTable ="<table>";
     for(i=0;i<items.length;i++){
@@ -251,7 +251,7 @@ function guardarInformacionRoom(){
             $("#category_id").val("");
             $("#description").val("");
             traerInformacionRoom();
-            alert("se ha guardado el dato")
+            alert("se ha guardado la informacion")
         }
     });
 }
@@ -280,7 +280,7 @@ function editarInformacionRoom(){
             $("#category_id").val("");
             $("#description").val("");
             traerInformacionRoom();
-            alert("se ha Actualizado")
+            alert("se ha Actualizado los datos")
         }
     });
 }
@@ -299,7 +299,7 @@ function borrarElementoRoom(idElemento){
         success:function(respuesta){
             $("#resultadoRoom").empty();
             traerInformacionRoom();
-            alert("Se ha Eliminado.")
+            alert("Se ha Eliminado los datos")
         }
     });
 }
