@@ -1,4 +1,4 @@
->
+<!DOCTYPE html>
 <html>
 <head>
     <title>Reto#2 </title>
@@ -7,13 +7,16 @@
 </head>
 <body>
 <h1>RESERVAS HOTEL ARBOLEDA!!!</h1>
+<div>
+<h2>Clientes</h2>
+</div>
 <button onclick="consultaInfoCliente()"> Consultar Cliente </button>
 <div id="resultado"></div>
 <div>
-    <input type="number" id="id" placeholder="id">
-    <input type="text" id="Nombre" placeholder="Nombre">
-    <input type="text" id="Email" placeholder="Email">
-    <input type="number" id="age" placeholder="age">
+<input type="number" id="id" placeholder="id">
+<input type="text" id="Nombre" placeholder="Nombre">
+<input type="text" id="Email" placeholder="Email">
+<input type="number" id="age" placeholder="age">
 </div>
 <button onclick="registrarCliente()"> Registrar Cliente </button>
 <button onclick="actualizarInformacion()"> Actualizar Cliente </button>
@@ -40,11 +43,8 @@
         <input type="number" id="category_id" placeholder="category_id">
         <input type="text" id="description" placeholder="description">
     </div>
-    
     <button onclick="guardarInformacionRoom()">Guardar Habitacion!</button>
     <button onclick="editarInformacionRoom()">Actualizar Habitacion!</button>
-
 </div>
-
 </body>
 </html>
