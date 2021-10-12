@@ -272,7 +272,7 @@ function editarInformacionRoom(){
         data:dataToSend,
         contentType:"application/JSON",
         datatype:"JSON",
-        success:function(respuesta){
+        success:function(resultadoRoom){
             $("#resultadoRoom").empty();
             $("#id2").val("");
             $("#room").val("");
